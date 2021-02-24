@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h2>TODO LIST</h2>
+    <Sort />
+    <AddTodo />
+    <Todos />
+    
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Todos from './components/Todos'
+import Sort from './components/Todo-sort'
+import AddTodo from './components/Todo-input'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Todos,
+    Sort,
+    AddTodo
   }
 }
 </script>
